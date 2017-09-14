@@ -10,15 +10,17 @@ package myconcrete;
  * @author Eric
  */
 public class Mammal extends Animal{
-    
-    private String clasS;
+    private String dietType;
 
-    public String getClasS() {
-        return clasS;
+    public String getDietType() {
+        return dietType;
     }
 
-    public void setClasS(String clasS) {
-        this.clasS = clasS;
+    public void setDietType(String dietType) {
+        if (dietType == null){
+            throw new IllegalArgumentException("All Mammals must eat");
+        }
+        this.dietType = dietType;
     }
     
     

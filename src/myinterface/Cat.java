@@ -10,42 +10,19 @@ package myinterface;
  * @author Eric
  */
 public class Cat extends Mammal {
-    private String phylum;
-    private String clasS;
-    private String genus;
-    private String species;
+    private String catType;
+
+    public String getCatType() {
+        return catType;
+    }
+
+    public void setCatType(String catType) {
+        if (catType == null){
+            throw new IllegalArgumentException("The cat must have a type (wild, tabby, black, persian, etc)");
+        }
+        this.catType = catType;
+    }
     
-    @Override
-
-    public String getPhylum() {
-        return phylum;
-    }
-
-    public void setPhylum(String phylum) {
-        this.phylum = phylum;
-    }
-
-    public String getClasS() {
-        return clasS;
-    }
-
-    public void setClasS(String clasS) {
-        this.clasS = clasS;
-    }
-
-    public String getGenus() {
-        return genus;
-    }
-
-    public void setGenus(String genus) {
-        this.genus = genus;
-    }
-
-    public String getSpecies() {
-        return species;
-    }
-
-    public void setSpecies(String species) {
-        this.species = species;
-    }
+    
+    
 }
