@@ -10,31 +10,16 @@ package myabstract;
  * @author Eric
  */
 public class Cat extends Mammal {
-    private String genus;
-    private String species;
-    private String name;
+    private String catType;
 
-    public String getGenus() {
-        return genus;
+    public String getCatType() {
+        return catType;
     }
 
-    public void setGenus(String genus) {
-        this.genus = genus;
-    }
-
-    public String getSpecies() {
-        return species;
-    }
-
-    public void setSpecies(String species) {
-        this.species = species;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setCatType(String catType) {
+        if (catType == null){
+            throw new IllegalArgumentException("The cat must have a type (wild, tabby, black, persian, etc)");
+        }
+        this.catType = catType;
+    } 
 }
