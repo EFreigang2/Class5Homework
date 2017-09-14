@@ -9,14 +9,17 @@ package myconcrete;
  *
  * @author Eric
  */
-public class Animal {
-    private String phylum;
+public class Mammal extends Animal{
+    
+    private String clasS;
 
-    public String getPhylum() {
-        return phylum;
+    public String getClasS() {
+        return clasS;
     }
 
-    public void setPhylum(String phylum) {
-        this.phylum = phylum;
+    public void setClasS(String clasS) {
+        this.clasS = clasS;
     }
+    
+    
 }
