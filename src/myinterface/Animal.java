@@ -10,6 +10,7 @@ package myinterface;
  * @author Eric
  */
 public interface Animal {
+    
     public abstract String getPhylum();
     
     public abstract void setPhylum(String phylum);
